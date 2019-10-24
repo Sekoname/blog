@@ -1,0 +1,11 @@
+<%=form_for @post do|p|%>
+<%=p.label :Titre%>
+<%=p.text_field :titre%>
+<%=p.label :Libellé%>
+<%=p.text_field :libelle%>
+<%=p.label :Mots_clés%>
+<%=p.text_field :motcle%>
+<%=p.label :Commentaire%>
+<%=p.text_field :commentaire%>
+<%=p.submit "Poster"%>
+<%end%>

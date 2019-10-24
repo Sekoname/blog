@@ -1,4 +1,6 @@
+<%=render 'menus/mymenu'%>
 <h3><%=@post.titre%></h3>
 <h4><%=@post.libelle%></h4>
 <h4><%=@post.motcle%></h4>
 <h4><%=@post.commentaire%></h4>
+<%=link_to "Modifier", edit_post_path(@post)%>
