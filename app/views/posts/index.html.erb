@@ -1,6 +1,24 @@
 <%=render 'menus/mymenu'%>
-<%@posts.each do|post|%>
-<h3><%=post.titre%></h3>
-<h4><%=post.libelle%></h4>
-<%=link_to 'Voir', post%>
-<%end%>
+<div class="container-fluid">
+    <div class="row">
+    <%@posts.each do|post|%>
+    <div class='col-4'>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <%=image_tag post.photo.url, class:"card-img"%>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%=post.titre%></h5>
+                <h4><%=post.libelle%></h4>
+                <%=link_to 'Voir', post, class:"btn btn-primary"%>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <%end%>
+    </div>
+</div>

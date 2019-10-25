@@ -1,0 +1,9 @@
+development:
+    cloud_name: "sekoname2"
+    api_key: "972421158917992"
+    api_secret: "B3ZFuIykcz0cx3kUoxUGDBztE7E"
+
+production:
+    cloud_name: "sekoname2"
+    api_key: "972421158917992"
+    api_secret: "B3ZFuIykcz0cx3kUoxUGDBztE7E"
